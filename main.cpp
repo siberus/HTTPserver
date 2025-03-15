@@ -89,7 +89,7 @@ int main() {
     hints.ai_protocol = IPPROTO_TCP;
     hints.ai_flags = AI_PASSIVE;
 
-    result = getaddrinfo("127.0.0.1", "8002", &hints, &addr);
+    result = getaddrinfo("127.0.0.1", "8003", &hints, &addr);
     if (result != 0) {
         cerr << "getaddrinfo failed: " << result << "\n";
         WSACleanup();
