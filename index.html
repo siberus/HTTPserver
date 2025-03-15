@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>Сложная веб-страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мой сложный сайт</h1>
+    </header>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+    </nav>
+    <main>
+        <h2>Добро пожаловать!</h2>
+        <p id="message">Нажмите на кнопку, чтобы изменить этот текст.</p>
+        <button onclick="changeText()">Нажми меня</button>
+    </main>
+    <footer>
+        &copy; 2023 Мой сайт
+    </footer>
+
+    <script>
+        function changeText() {
+            document.getElementById('message').innerText = 'Текст изменен!';
+        }
+    </script>
+</body>
+</html>
